@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:MemoryLeakDemo.ViewModels"
+             x:Class="MemoryLeakDemo.Views.OtherPage"
+             x:DataType="viewmodel:OtherPageViewModel">
+    <VerticalStackLayout>
+        <Button
+                Text="Open window"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Command="{Binding GoBackCommand}"
+                HorizontalOptions="Fill" />
+        <Label Text="simple text"
+                HorizontalTextAlignment="Center" />
+        <Image
+            Source="dotnet_bot.png"/>
+
+    </VerticalStackLayout>
+</ContentPage>
